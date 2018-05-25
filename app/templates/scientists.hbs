@@ -1,3 +1,10 @@
 {{! open http://localhost:4200/scientists to see the h2 header within application.hbs}}
-<h2>List of Scientist</h2>
+{{! model as |scientist| needs to match item used, "scientist"}}
+{{!-- <ul>
+    {{#each model as |scientist|}}
+        <li>{{scientist}}</li>
+    {{/each}}
+</ul> --}}
+
+{{people-list title="List of Scientists" people=model}}
 {{outlet}}
